@@ -23,6 +23,7 @@
 		AD0F166D28A7E01600419A57 /* FetchWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F166C28A7E01600419A57 /* FetchWeatherInfo.swift */; };
 		AD0F166F28A7E02200419A57 /* FetchLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F166E28A7E02200419A57 /* FetchLocationInfo.swift */; };
 		AD0F167128A7E37500419A57 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F167028A7E37500419A57 /* WeatherData.swift */; };
+		AD0F167428A7FF8E00419A57 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AD0F167328A7FF8E00419A57 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0F167428A7FF8E00419A57 /* Kingfisher in Frameworks */,
 				AD0F166528A7D57300419A57 /* SwiftyJSON in Frameworks */,
 				AD0F166228A7D56600419A57 /* Alamofire in Frameworks */,
 			);
@@ -146,6 +148,7 @@
 			packageProductDependencies = (
 				AD0F166128A7D56600419A57 /* Alamofire */,
 				AD0F166428A7D57300419A57 /* SwiftyJSON */,
+				AD0F167328A7FF8E00419A57 /* Kingfisher */,
 			);
 			productName = WeatherForecast;
 			productReference = AD0F163F28A7CF0E00419A57 /* WeatherForecast.app */;
@@ -178,6 +181,7 @@
 			packageReferences = (
 				AD0F166028A7D56600419A57 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				AD0F166328A7D57300419A57 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				AD0F167228A7FF8E00419A57 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AD0F164028A7CF0E00419A57 /* Products */;
 			projectDirPath = "";
@@ -452,6 +456,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		AD0F167228A7FF8E00419A57 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -464,6 +476,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD0F166328A7D57300419A57 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		AD0F167328A7FF8E00419A57 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD0F167228A7FF8E00419A57 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

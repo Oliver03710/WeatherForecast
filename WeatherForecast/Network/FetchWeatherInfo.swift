@@ -28,7 +28,7 @@ class FetchWeatherInfo {
                 let json = JSON(value)
 
                 let description = json["weather"][0]["description"].stringValue
-                let icon = json["weather"][0]["icon"].stringValue + "@2x.png"
+                let icon = EndPoints.iconURL + json["weather"][0]["icon"].stringValue + "@2x.png"
                 let main = json["weather"][0]["main"].stringValue
                 let temp = json["main"]["temp"].doubleValue - 273.15
                 let feelslike = json["main"]["feels_like"].doubleValue - 273.15
